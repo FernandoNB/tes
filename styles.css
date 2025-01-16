@@ -49,9 +49,8 @@ header h1 {
     color: #007BFF;
 }
 
-header .highlight,
 header .intro-text p {
-    text-align: center;
+    text-align: left;
     margin: 5px 0;
 }
 
