@@ -1,0 +1,233 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 140px;
+    height: auto;
+    margin-top: -210px; /* Ajuste para subir a imagem */
+}
+
+.header-right {
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do header-right */
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0 10px;
+    display: inline-block; /* Exibe o título na mesma linha */
+    vertical-align: middle; /* Alinha verticalmente ao meio */
+    color: #007BFF;
+}
+
+header .highlight,
+header .intro-text p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header h3 {
+    font-size: 15px; /* Ajuste o tamanho do h3 */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Evita que o conteúdo saia da borda */
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+
+form legend {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left, .header-right {
+        flex: 1;
+    }
+
+    .header-left img {
+        margin-top: 100px; /* Ajuste para subir a imagem em telas menores */
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left img {
+        width: 80px; /* Ajuste o tamanho da logo para dispositivos móveis */
+        margin-top: 5px; /* Ajuste para subir a imagem em dispositivos móveis */
+    }
+
+    .header-right {
+        text-align: center; /* Centraliza o texto */
+        padding-left: 10;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .flex-container div {
+        flex: 1 1 100%;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, select, textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .date-container {
+        flex-direction: column;
+    }
+}
+
+.contato {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    margin: 5px 0;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-container div {
+    flex: 1;
+}
+
+.date-container {
+    display: flex;
+    gap: 20px;
+}
+
+.date-container div {
+    flex: 1;
+}

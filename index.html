@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Solicitação de Cotação de Grupo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contato">
+        <p>📞 Fale conosco: (11) 92050-5804</p>
+        <p>📧 E-mail: flypremiumsky@gmail.com</p>
+    </div>
+     
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="header-left">
+                    <img src="logom.png" alt="Fly Premium Sky">
+                </div>
+                <div class="header-right">
+                    <h1>Formulário de Solicitação de Cotação</h1>
+                    
+                    <div class="intro-text">
+                        <h3 class="highlight">(Passagens Aéreas com até 50% desc.)</h3>
+                        <p>✨ Fly Premium Sky - Viagens com Excelência e Exclusividade!</p>
+                        <p>✨ Na Fly Premium Sky, sua satisfação é o nosso destino final.</p>
+                        <p>✨ Somos uma agência de viagens dedicada a criar experiências únicas e inesquecíveis, combinando conforto, segurança e personalização em cada detalhe.</p>
+                        <p>🌍 Descubra o mundo com quem entende de você!</p>
+                        <p>✨ Oferecemos consultoria especializada, roteiros sob medida e atendimento exclusivo para garantir que cada viagem seja mais do que um passeio: seja uma memória para a vida inteira.</p>
+                        <p>📌 Seu sonho, nosso compromisso!</p>
+                        <p>✨ Viaje com quem prioriza você.</p>
+                        <p>✨ Fly Premium Sky: transformando seus desejos em realidade, com excelência e cuidado em cada etapa.</p>
+                        <p>➡️ Pronto para embarcar? Fale conosco e viva a experiência.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <form>
+            <fieldset>
+                <legend>Dados do solicitante</legend>
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Cliente" required>
+
+                <label for="agencia">Nome da Agência / Empresa *</label>
+                <input type="text" id="agencia" name="agencia" placeholder="Nome Agência" required>
+
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="E-mail Agência" required>
+
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="tipo-cliente">Tipo de Cliente *</label>
+                <select id="tipo-cliente" name="tipo-cliente" required>
+                    <option value="">Selecione</option>
+                    <option value="agencia">Agência</option>
+                    <option value="empresa">Empresa</option>
+                    <option value="particular">Particular</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do(s) Voo(s)</legend>
+                <label for="origem">Origem *</label>
+                <select id="origem" name="origem" required>
+                    <option value="">Selecione Origem</option>
+                </select>
+
+                <label for="destino">Destino *</label>
+                <select id="destino" name="destino" required>
+                    <option value="">Selecione Destino</option>
+                </select>
+
+                <label for="data-voo">Data voo *</label>
+                <input type="date" id="data-voo" name="data-voo" required>
+
+                <label for="horario">Horarios *</label>
+                <select id="horario" name="horario" required>
+                    <option value="time">Selecione Horario</option>
+                </select>
+
+                <label for="disponivel-voo">Voos Disponiveis *</label>
+                <select id="disponivel-voo" name="disponivel-voo" required>
+                    <option value="">Selecione uma opção</option>
+                </select>
+
+                <label for="adultos">Quantidade de Adultos *</label>
+                <input type="number" id="adultos" name="adultos" value="0" required>
+
+                <label for="criancas-0-23">Quantidade de Crianças 0-23 meses</label>
+                <input type="number" id="criancas-0-23" name="criancas-0-23" value="0">
+
+                <label for="criancas-2-11">Quantidade de Crianças 2 a 11 anos</label>
+                <input type="number" id="criancas-2-11" name="criancas-2-11" value="0">
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Hotel</legend>
+                <label for="classe-Hotel">Classe do Hotel *</label>
+                <select id="classe-Hotel" name="classe-Hotel" required>
+                    <option value="">Selecione a classe do hotel</option>
+                    <option value="3">3 Estrelas</option>
+                    <option value="4">4 Estrelas</option>
+                    <option value="5">5 Estrelas</option>
+                    <option value="6">Luxo</option>
+                    <option value="2">Econômico</option>
+                </select>
+
+                <label for="Hotel">Hotel *</label>
+                <select id="Hotel" name="Hotel" required>
+                    <option value="">Selecione um hotel</option>
+                </select>
+
+                <label for="alimetacao">Regime de alimentação *</label>
+                <select id="alimetacao" name="alimetacao">
+                    <option value="">Selecione uma opção</option>
+                    <option value="cafe">Café da Manhã</option>
+                    <option value="meia">Meia Pensão</option>
+                    <option value="all">All Inclusive</option>
+                    <option value="pensão">Pensão Completa</option>
+                </select>
+
+                <div class="date-container">
+                    <div>
+                        <label for="data-entrada">Data de Entrada *</label>
+                        <input type="date" id="data-entrada" name="data-entrada" required>
+                    </div>
+                    <div>
+                        <label for="data-saida">Data de Saída *</label>
+                        <input type="date" id="data-saida" name="data-saida" required>
+                    </div>
+                </div>
+
+                <p style="text-align: center;">Quantidade de apartamentos</p>
+                <label for="single">Single</label>
+                <input type="number" id="single" name="single" value="0">
+
+                <label for="duplo">Duplo</label>
+                <input type="number" id="duplo" name="duplo" value="0">
+
+                <label for="triplo">Triplo</label>
+                <input type="number" id="triplo" name="triplo" value="0">
+
+                <label for="quadroplo">Quádruplo</label>
+                <input type="number" id="quadroplo" name="quadroplo" value="0">
+            </fieldset>
+
+            <fieldset>
+                <legend>Automóvel</legend>
+                <label for="locacao">Locação de Carro</label>
+                <select id="locacao" name="locacao">
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                
+                <label for="tipoCarro">Tipo de Carro</label>
+                <select id="tipoCarro" name="tipoCarro">
+                    <option value="">Selecione uma opção</option>
+                    <option value="economico">Econômico</option>
+                    <option value="suv">SUV</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="luxo">Luxo</option>
+                </select>
+
+                <div id="periodoAluguel" class="date-container" aria-hidden="true">
+                    <div>
+                        <label for="dataInicio">Data de Início</label>
+                        <input type="date" id="dataInicio" name="dataInicio">
+                    </div>
+                    <div>
+                        <label for="dataFim">Data de Término</label>
+                        <input type="date" id="dataFim" name="dataFim">
+                    </div>
+                </div>
+
+                <div id="observacoesEspeciais" class="hidden" aria-hidden="true">
+                    <label for="observacoes">Digite suas observações:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="30" placeholder="Escreva aqui o que deseja..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
